@@ -2,6 +2,9 @@ name: repro
 on:
   push:
     branches: [ main ]
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: my-custom-runner          # ← NOT in runnerLabels
